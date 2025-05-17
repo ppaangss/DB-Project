@@ -1,0 +1,27 @@
+# Java 컴파일 파일
+*.class
+
+# 빌드 디렉토리
+/bin/
+/build/
+/out/
+
+# Eclipse 프로젝트 설정
+.settings/
+.classpath
+.project
+
+# IntelliJ (혹시 나중에 쓰게 될 경우)
+.idea/
+*.iml
+
+# 로그 파일
+*.log
+
+# OS 생성 파일
+.DS_Store
+Thumbs.db
+
+# 환경설정 백업
+*.bak
+*.tmp
