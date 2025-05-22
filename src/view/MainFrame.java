@@ -15,7 +15,7 @@ public class MainFrame extends JFrame{
 	public MainFrame() {
         setTitle("캠핑카 예약 시스템");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(800, 500);
         setLocationRelativeTo(null);//중앙 정렬
 
         showMainMenu();  // 메인 메뉴 패널로 시작
@@ -52,13 +52,14 @@ public class MainFrame extends JFrame{
         
         //관리자 로그인
         adminLoginButton.addActionListener(e -> setContentPaneAndRefresh(new AdminLoginPanel(this)));
-
-        setContentPaneAndRefresh(panel);
+        //람다식, 함수형 인터페이스 구현할 때 사용
+        
+        setContentPaneAndRefresh(panel);//메인 화면 panel로 화면 출력
     }
 
     // 공통 패널 교체 함수
     public void setContentPaneAndRefresh(JPanel panel) {
-        setContentPane(panel);
+        setContentPane(panel); //JFrame에 붙어있는 주 콘텐츠 영역을 새로운 JPanel(또는 다른 컨테이너)로 교체
         revalidate();  // 레이아웃 다시 계산
         repaint();     // 화면 다시 그리기
     }
