@@ -1,4 +1,4 @@
-package view;
+package sql;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -20,6 +20,7 @@ import com.mysql.cj.jdbc.result.ResultSetMetaData;
 import com.mysql.cj.xdevapi.Statement;
 
 import data.DBConnection;
+import view.MainFrame;
 
 public class SQLResultPanel extends JPanel{
 	private static final long serialVersionUID = 1L;
