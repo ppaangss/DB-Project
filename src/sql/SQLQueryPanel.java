@@ -1,4 +1,4 @@
-package view;
+package sql;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -11,6 +11,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+
+import view.AdminLoginPanel;
+import view.MainFrame;
 
 public class SQLQueryPanel extends JPanel {
     public SQLQueryPanel(MainFrame frame) {

@@ -1,4 +1,4 @@
-package view;
+package table;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -14,6 +14,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
 import javax.swing.table.DefaultTableModel;
+
+import view.AdminLoginPanel;
+import view.MainFrame;
 
 public class AllTablesPanel extends JPanel {
     private static final long serialVersionUID = 1L;
@@ -63,7 +66,7 @@ public class AllTablesPanel extends JPanel {
         southPanel.add(backButton);
         add(southPanel, BorderLayout.SOUTH);
         
-     // 🔹 테이블 목록 초기화
+        // 🔹 테이블 목록 초기화
         try {
             java.util.List<String> tables = data.DBConnection.getAllTables();
             setTableListData(tables.toArray(new String[0]));

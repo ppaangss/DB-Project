@@ -1,5 +1,5 @@
+package view;
 import data.DBConnection;
-import view.MainFrame;
 
 public class Main {
 

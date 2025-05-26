@@ -4,7 +4,6 @@ DROP DATABASE IF EXISTS test;
 CREATE DATABASE test;
 use test;
 
-
 -- select * from CampingCarCompany;
 -- select * from campingcar;
 -- select * from part;
